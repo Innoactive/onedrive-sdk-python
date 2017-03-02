@@ -93,6 +93,7 @@ from .request.thumbnail_content_request import ThumbnailContentRequest, Thumbnai
 from .request.one_drive_client import OneDriveClient
 from .auth_provider import AuthProvider
 from .http_provider import HttpProvider
+from .social_auth_provider import SocialAuthProvider
 from .extensions.onedrivesdk_helper import *
 from .extensions import *
 import sys
