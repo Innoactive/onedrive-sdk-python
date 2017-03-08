@@ -87,7 +87,8 @@ class HttpProvider(HttpProviderBase):
         response = requests.get(
             url,
             stream=True,
-            headers=headers)
+            headers=headers,
+            verify=False)
 
         if response.status_code == 200:
             with open(path, 'wb') as f:

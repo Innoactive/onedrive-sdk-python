@@ -119,7 +119,7 @@ class HttpProviderWithProxy(http_provider_base.HttpProviderBase):
             url,
             stream=True,
             headers=headers,
-            verify=self.verify_ssl,
+            verify=False,
             proxies=self.proxies)
 
         if response.status_code == 200:

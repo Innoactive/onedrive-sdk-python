@@ -22,7 +22,7 @@ class ResourceDiscoveryRequest(object):
                 capability = 'MyFiles' and service_api_version = 'v2.0'
         """
         headers = {'Authorization': 'Bearer ' + access_token}
-        response = json.loads(requests.get(self._discovery_service_url, headers=headers).text)
+        response = json.loads(requests.get(self._discovery_service_url, headers=headers, verify = False).text)
         service_info_list = [ServiceInfo(x) for x in response['value']]
         trimmed_service_info_list = [si for si in service_info_list
                                      if si.capability == 'MyFiles' and si.service_api_version == 'v2.0']
