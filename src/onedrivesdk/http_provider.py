@@ -58,7 +58,7 @@ class HttpProvider(HttpProviderBase):
                                            headers=headers,
                                            data=f)
                 prepped = request.prepare()
-                response = session.send(prepped)
+                response = session.send(prepped, verify=False)
         else:
             request = requests.Request(method,
                                        url,
@@ -66,7 +66,7 @@ class HttpProvider(HttpProviderBase):
                                        data=data,
                                        json=content)
             prepped = request.prepare()
-            response = session.send(prepped)
+            response = session.send(prepped, verify=False)
 
         custom_response = HttpResponse(response.status_code, response.headers, response.text)
         return custom_response

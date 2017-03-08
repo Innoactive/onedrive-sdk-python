@@ -86,7 +86,7 @@ class HttpProviderWithProxy(http_provider_base.HttpProviderBase):
                                            data=f)
                 prepped = request.prepare()
                 response = session.send(prepped,
-                                        verify=self.verify_ssl,
+                                        verify=False,
                                         proxies=self.proxies)
         else:
             request = requests.Request(method,
@@ -96,7 +96,7 @@ class HttpProviderWithProxy(http_provider_base.HttpProviderBase):
                                        json=content)
             prepped = request.prepare()
             response = session.send(prepped,
-                                    verify=self.verify_ssl,
+                                    verify=False,
                                     proxies=self.proxies)
 
         custom_response = http_response.HttpResponse(response.status_code, response.headers, response.text)
