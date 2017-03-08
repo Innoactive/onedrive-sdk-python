@@ -24,7 +24,7 @@
 '''
 
 from __future__ import unicode_literals
-from ..model.item_delta_collection_page import ItemDeltaCollectionPage
+from onedrivesdk.model.item_delta_collection_page import ItemDeltaCollectionPage
 from ..request.items_collection import ItemsCollectionResponse
 
 

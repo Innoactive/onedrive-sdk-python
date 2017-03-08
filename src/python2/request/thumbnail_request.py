@@ -5,8 +5,8 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..request_base import RequestBase
-from ..model.thumbnail import Thumbnail
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.model.thumbnail import Thumbnail
 import json
 
 class ThumbnailRequest(RequestBase):

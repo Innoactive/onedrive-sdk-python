@@ -6,9 +6,9 @@
 '''
 
 from __future__ import unicode_literals
-from ..collection_base import CollectionRequestBase, CollectionResponseBase
-from ..request_builder_base import RequestBuilderBase
-from ..model.subscriptions_collection_page import SubscriptionsCollectionPage
+from onedrivesdk.collection_base import CollectionRequestBase, CollectionResponseBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
+from onedrivesdk.model.subscriptions_collection_page import SubscriptionsCollectionPage
 import json
 
 class SubscriptionsCollectionRequest(CollectionRequestBase):

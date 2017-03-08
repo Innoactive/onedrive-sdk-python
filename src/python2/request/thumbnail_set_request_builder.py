@@ -25,7 +25,7 @@
 
 from __future__ import unicode_literals
 from .thumbnail_set_request import ThumbnailSetRequest
-from ..request_builder_base import RequestBuilderBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
 from ..request.thumbnail_request_builder import ThumbnailRequestBuilder
 
 

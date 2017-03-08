@@ -5,8 +5,8 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..request_base import RequestBase
-from ..model.share import Share
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.model.share import Share
 import json
 
 class ShareRequest(RequestBase):

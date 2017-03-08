@@ -25,7 +25,7 @@
 
 from __future__ import unicode_literals
 from .thumbnail_request import ThumbnailRequest
-from ..request_builder_base import RequestBuilderBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
 from ..request.thumbnail_content_request import ThumbnailContentRequestBuilder
 
 
@@ -97,6 +97,14 @@ class ThumbnailRequestBuilder(RequestBuilderBase):
         """
         return self.content.request().download(local_path)
 
+    def get_content(self):
+        """Downloads the specified entity.
+
+        Args:
+            local_path (str): The path where the entity should be
+                downloaded to
+        """
+        return self.content.request().get_content()
 
     @property
     def content(self):

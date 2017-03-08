@@ -43,25 +43,21 @@ from .request.drive_request import DriveRequest
 from .request.drive_request_builder import DriveRequestBuilder
 from .request.share_request import ShareRequest
 from .request.share_request_builder import ShareRequestBuilder
-from .request.item_request import ItemRequest
 from .request.item_request_builder import ItemRequestBuilder
 from .request.permission_request import PermissionRequest
 from .request.permission_request_builder import PermissionRequestBuilder
 from .request.subscription_request import SubscriptionRequest
 from .request.subscription_request_builder import SubscriptionRequestBuilder
-from .request.tag_request import TagRequest
 from .request.tag_request_builder import TagRequestBuilder
 from .request.thumbnail_set_request import ThumbnailSetRequest
 from .request.thumbnail_set_request_builder import ThumbnailSetRequestBuilder
 from .request.thumbnail_request import ThumbnailRequest
 from .request.thumbnail_request_builder import ThumbnailRequestBuilder
-from .request.items_collection import ItemsCollectionRequest, ItemsCollectionRequestBuilder, ItemsCollectionResponse
 from .model.items_collection_page import ItemsCollectionPage
 from .request.shared_collection import SharedCollectionRequest, SharedCollectionRequestBuilder, SharedCollectionResponse
 from .model.shared_collection_page import SharedCollectionPage
 from .request.special_collection import SpecialCollectionRequest, SpecialCollectionRequestBuilder, SpecialCollectionResponse
 from .model.special_collection_page import SpecialCollectionPage
-from .request.items_collection import ItemsCollectionRequest, ItemsCollectionRequestBuilder, ItemsCollectionResponse
 from .model.items_collection_page import ItemsCollectionPage
 from .request.permissions_collection import PermissionsCollectionRequest, PermissionsCollectionRequestBuilder, PermissionsCollectionResponse
 from .model.permissions_collection_page import PermissionsCollectionPage
@@ -69,7 +65,6 @@ from .request.subscriptions_collection import SubscriptionsCollectionRequest, Su
 from .model.subscriptions_collection_page import SubscriptionsCollectionPage
 from .request.versions_collection import VersionsCollectionRequest, VersionsCollectionRequestBuilder, VersionsCollectionResponse
 from .model.versions_collection_page import VersionsCollectionPage
-from .request.children_collection import ChildrenCollectionRequest, ChildrenCollectionRequestBuilder, ChildrenCollectionResponse
 from .model.children_collection_page import ChildrenCollectionPage
 from .request.tags_collection import TagsCollectionRequest, TagsCollectionRequestBuilder, TagsCollectionResponse
 from .model.tags_collection_page import TagsCollectionPage
@@ -79,7 +74,7 @@ from .request.drives_collection import DrivesCollectionRequest, DrivesCollection
 from .model.drives_collection_page import DrivesCollectionPage
 from .request.shares_collection import SharesCollectionRequest, SharesCollectionRequestBuilder, SharesCollectionResponse
 from .model.shares_collection_page import SharesCollectionPage
-from .request.drive_recent import DriveRecentRequest
+from python2.request.drive_recent import DriveRecentRequest
 from .request.item_create_session import ItemCreateSessionRequest
 from .request.item_copy import ItemCopyRequest
 from .request.item_create_link import ItemCreateLinkRequest

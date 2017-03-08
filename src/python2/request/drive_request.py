@@ -5,8 +5,8 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..request_base import RequestBase
-from ..model.drive import Drive
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.model.drive import Drive
 import json
 
 class DriveRequest(RequestBase):

@@ -7,7 +7,7 @@
 
 from __future__ import unicode_literals
 from .subscription_request import SubscriptionRequest
-from ..request_builder_base import RequestBuilderBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
 
 
 class SubscriptionRequestBuilder(RequestBuilderBase):

@@ -23,9 +23,9 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..request_base import RequestBase
-from ..request_builder_base import RequestBuilderBase
-from ..model.thumbnail import Thumbnail
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
+from onedrivesdk.model.thumbnail import Thumbnail
 import json
 
 
@@ -52,6 +52,14 @@ class ThumbnailContentRequest(RequestBase):
         """
         self.download_item(content_local_path)
 
+    def get_content(self):
+        """Downloads the specified Thumbnail.
+
+        Args:
+            content_local_path (str):
+                The path where the Thumbnail should be downloaded to
+        """
+        return self.get_item_content()
 
 class ThumbnailContentRequestBuilder(RequestBuilderBase):
 

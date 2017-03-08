@@ -5,8 +5,8 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..request_base import RequestBase
-from ..model.tag import Tag
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.model.tag import Tag
 import json
 
 class TagRequest(RequestBase):

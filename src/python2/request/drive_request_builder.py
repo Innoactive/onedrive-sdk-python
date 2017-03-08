@@ -7,7 +7,7 @@
 
 from __future__ import unicode_literals
 from .drive_request import DriveRequest
-from ..request_builder_base import RequestBuilderBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
 from ..request.drive_recent import DriveRecentRequestBuilder
 
 

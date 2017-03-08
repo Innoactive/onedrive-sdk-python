@@ -24,8 +24,8 @@
 '''
 
 from __future__ import unicode_literals
-from ..collection_base import CollectionRequestBase, CollectionResponseBase, CollectionPageBase
-from ..request_builder_base import RequestBuilderBase
+from onedrivesdk.collection_base import CollectionRequestBase, CollectionResponseBase, CollectionPageBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
 import json
 
 class EffectiveRolesCollectionRequest(CollectionRequestBase):

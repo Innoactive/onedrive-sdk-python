@@ -25,7 +25,7 @@
 
 from __future__ import unicode_literals
 from .permission_request import PermissionRequest
-from ..request_builder_base import RequestBuilderBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
 
 
 class PermissionRequestBuilder(RequestBuilderBase):

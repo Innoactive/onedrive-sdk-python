@@ -23,11 +23,11 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..model.item import Item
-from ..request_base import RequestBase
-from ..request_builder_base import RequestBuilderBase
-from ..async_operation_monitor import AsyncOperationMonitor
-from ..options import *
+from onedrivesdk.model.item import Item
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
+from onedrivesdk.async_operation_monitor import AsyncOperationMonitor
+from onedrivesdk.options import *
 import json
 
 

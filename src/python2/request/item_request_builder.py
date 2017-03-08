@@ -7,7 +7,7 @@
 
 from __future__ import unicode_literals
 from .item_request import ItemRequest
-from ..request_builder_base import RequestBuilderBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
 from ..request.item_create_session import ItemCreateSessionRequestBuilder
 from ..request.item_copy import ItemCopyRequestBuilder
 from ..request.item_create_link import ItemCreateLinkRequestBuilder
@@ -97,6 +97,14 @@ class ItemRequestBuilder(RequestBuilderBase):
         """
         return self.content.request().download(local_path)
 
+    def get_content(self):
+        """Downloads the specified entity.
+
+        Args:
+            local_path (str): The path where the entity should be
+                downloaded to
+        """
+        return self.content.request().get_content()
 
     @property
     def permissions(self):

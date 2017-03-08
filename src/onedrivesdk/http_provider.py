@@ -101,3 +101,29 @@ class HttpProvider(HttpProviderBase):
             custom_response = HttpResponse(response.status_code, response.headers, response.text)
 
         return custom_response
+
+    def get_content(self, headers, url):
+        """Downloads a file to the stated path
+
+        Args:
+            headers (dict of (str, str)): A dictionary of name-value
+                pairs to be used as headers in the request
+            url (str): The URL from which to download the file
+            path (str): The local path to save the downloaded file
+
+        Returns:
+            :class:`HttpResponse<onedrivesdk.http_response.HttpResponse>`:
+                The response to the request
+        """
+        response = requests.get(
+            url,
+            stream=True,
+            headers=headers,
+            verify=False)
+
+        if response.status_code == 200:
+            custom_response = HttpResponse(response.status_code, response.headers, response.content)
+        else:
+            custom_response = HttpResponse(response.status_code, response.headers, response.text)
+
+        return custom_response

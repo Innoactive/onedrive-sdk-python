@@ -5,10 +5,10 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..model.permission import Permission
-from ..collection_base import CollectionRequestBase
-from ..request_builder_base import RequestBuilderBase
-from ..options import *
+from onedrivesdk.model.permission import Permission
+from onedrivesdk.collection_base import CollectionRequestBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
+from onedrivesdk.options import *
 import json
 
 

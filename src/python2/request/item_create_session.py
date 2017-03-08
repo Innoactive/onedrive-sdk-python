@@ -23,10 +23,10 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..model.upload_session import UploadSession
-from ..request_base import RequestBase
-from ..request_builder_base import RequestBuilderBase
-from ..options import *
+from onedrivesdk.model.upload_session import UploadSession
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.request_builder_base import RequestBuilderBase
+from onedrivesdk.options import *
 import json
 
 

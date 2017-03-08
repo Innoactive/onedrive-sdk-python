@@ -172,7 +172,7 @@ class RequestBase(object):
 
         Returns:
             :class:`HttpResponse<onedrivesdk.http_response.HttpResponse>`:
-                The response to the request 
+                The response to the request
         """
         self._client.auth_provider.authenticate_request(self)
 
@@ -186,6 +186,30 @@ class RequestBase(object):
             self._headers,
             self.request_url,
             path)
+
+        return response
+
+    def get_item_content(self):
+        """Download a file to a local path
+
+        Args:
+            path (str): The local path to download the file
+
+        Returns:
+            :class:`HttpResponse<onedrivesdk.http_response.HttpResponse>`:
+                The response to the request
+        """
+        self._client.auth_provider.authenticate_request(self)
+
+        self.append_option(HeaderOption("X-RequestStats",
+                                        "SDK-Version=python-v"+__version__))
+
+        if self.content_type:
+            self.append_option(HeaderOption("Content-Type", self.content_type))
+
+        response = self._client.http_provider.get_content(
+            self._headers,
+            self.request_url)
 
         return response
 

@@ -5,8 +5,8 @@
 #  This file was generated and any changes will be overwritten.
 '''
 
-from ..request_base import RequestBase
-from ..model.permission import Permission
+from onedrivesdk.request_base import RequestBase
+from onedrivesdk.model.permission import Permission
 import json
 
 class PermissionRequest(RequestBase):
